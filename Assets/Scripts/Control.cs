@@ -6,6 +6,8 @@ public class Control : MonoBehaviour
     public Rigidbody lleg;
     public Rigidbody rleg;
 
+    public bool alive = true;
+
     public Rigidbody body;
 
     private Move move;
@@ -17,8 +19,15 @@ public class Control : MonoBehaviour
 
     private void Update()
     {
-        changeTarget();
-        kick();
+        if (alive)
+        {
+            changeTarget();
+            kick();
+        }
+        else
+        {
+            move.move = false;
+        }
     }
 
     void kick()

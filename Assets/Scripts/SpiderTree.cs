@@ -13,11 +13,13 @@ public class SpiderTree : KickTrigger
 
     public Rigidbody campfire;
 
+    public bool isDone;
+
 
     public override void onKick()
     {
         if (spider.activeInHierarchy) return;
-
+        isDone = true;
         campfire.isKinematic = false;
         spider.SetActive(true);
         hunter1.move = true;

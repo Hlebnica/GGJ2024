@@ -10,6 +10,7 @@ public class CarFirer : MonoBehaviour
     public GameObject smoker;
     public GameObject bear;
     public Rigidbody bearRB;
+    public GameObject door;
 
     private void OnCollisionEnter(Collision other)
     {
@@ -33,5 +34,6 @@ public class CarFirer : MonoBehaviour
         Destroy(toKill);
         Destroy(smoker.gameObject, 0.5f);
         Destroy(bear);
+        door.SetActive(true);
     }
 }

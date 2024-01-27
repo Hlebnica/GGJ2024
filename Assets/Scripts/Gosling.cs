@@ -16,6 +16,13 @@ public class Gosling : MonoBehaviour
 
     private void Update()
     {
+        if (forward)
+        {
+            if (anim != null)
+                StopCoroutine(anim);
+            anim = null;
+            rb.AddForce(-10000, 0, 0, ForceMode.Force);
+        }
     }
 
     public IEnumerator stuckAnim()

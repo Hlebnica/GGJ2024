@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LVL4.unity
     guid: f03f1a72f08861c4d844c883703a1c07
+  - enabled: 1
+    path: Assets/Scenes/LVL4_1.unity
+    guid: 1b30b150c18b845438ec89e5ab67569d
+  - enabled: 1
+    path: Assets/Scenes/DURKA.unity
+    guid: 4bbd81877576ef243b04366f94be61e0
   m_configObjects: {}

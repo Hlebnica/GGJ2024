@@ -26,10 +26,8 @@ public class Control : MonoBehaviour
         if (!Input.GetMouseButtonDown(1)) return;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
-        print("kik");
         if (Physics.Raycast(ray, out hit, 100)) //, 1 << LayerMask.NameToLayer("Kickable")
         {
-            print("wtf?");
             // targetPosition = hit.point;
             // move = true;
 
@@ -43,11 +41,17 @@ public class Control : MonoBehaviour
             while (i < hitColliders.Length)
             {
                 var collider = hitColliders[i];
-                print(collider.name);
                 var clb = collider.attachedRigidbody;
-                print(body);
-                clb.AddForce((body.position - center).normalized * -10000, ForceMode.Impulse);
+                if (clb != null)
+                {
+                    clb.AddForce((body.position - center).normalized * -100, ForceMode.Impulse);
+                }
 
+                var kickTrigger = collider.GetComponent<KickTrigger>();
+                if (kickTrigger != null)
+                {
+                    kickTrigger.onKick();
+                }
 
                 i++;
             }

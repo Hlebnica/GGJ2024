@@ -21,7 +21,7 @@ public class Gosling : MonoBehaviour
             if (anim != null)
                 StopCoroutine(anim);
             anim = null;
-            rb.AddForce(-10000, 0, 0, ForceMode.Force);
+            rb.AddForce(-5000, 0, 0, ForceMode.Impulse);
         }
     }
 

@@ -34,7 +34,7 @@ public class Move : MonoBehaviour
 
 
         var targetVector = (targetPosition - pos).normalized;
-        body.AddForce(targetVector * 1000f, ForceMode.Force);
+        body.AddForce(targetVector * 500f, ForceMode.Impulse);
         var lok = Quaternion.LookRotation(targetVector);
         body.MoveRotation(Quaternion.Lerp(body.rotation, lok, Time.deltaTime * 4));
         // body.AddTorque(0, -a/10 * Time.deltaTime, 0, ForceMode.VelocityChange);

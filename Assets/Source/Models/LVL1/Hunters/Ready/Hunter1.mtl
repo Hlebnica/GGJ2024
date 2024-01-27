@@ -1,0 +1,102 @@
+# Blender 4.0.2 MTL File: 'Hunters.blend'
+# www.blender.org
+
+newmtl palette
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-0-head.png
+
+newmtl palette.002
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-2-thighL.png
+
+newmtl palette.003
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-3-thighR.png
+
+newmtl palette.004
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-4-shinL.png
+
+newmtl palette.005
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-5-upper_armL.png
+
+newmtl palette.006
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-6-forearmL.png
+
+newmtl palette.007
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-7-upper_armR.png
+
+newmtl palette.008
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-8-shinR.png
+
+newmtl palette.009
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-9-forearmR.png
+
+newmtl palette.010
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:/user/Documents/Programs/GGJ2024/Assets/Source/Models/LVL1/Hunters/Export/Hunters-10-body.png

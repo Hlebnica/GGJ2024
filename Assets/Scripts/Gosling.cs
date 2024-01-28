@@ -8,6 +8,8 @@ public class Gosling : MonoBehaviour
     public bool forward = false;
     public Coroutine anim;
 
+    public AudioSource audioSource;
+
 
     private void Start()
     {

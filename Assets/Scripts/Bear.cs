@@ -11,6 +11,8 @@ public class Bear : MonoBehaviour
     public Control playerControl;
     public DeathAnim deathAnim;
 
+    public AudioSource audioSource;
+
     public bool attack = false;
 
     private void OnCollisionEnter(Collision other)
@@ -18,6 +20,7 @@ public class Bear : MonoBehaviour
         // print(other.articulationBody.tag);
         if (other.transform.CompareTag("Player") && !attack && !bearMove.move)
         {
+            audioSource.Play();
             attack = true;
             rb.isKinematic = false;
             hand1.AddForce((hand1.position - other.transform.position).normalized * 5,

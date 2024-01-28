@@ -7,8 +7,11 @@ public class CageDoor : KickTrigger
     public Transform wolfTarget;
     public Boss boss;
 
+    public AudioSource audioSource;
+
     public override void onKick()
     {
+        audioSource.Play();
         rb.isKinematic = false;
         wolf.move = true;
         wolf.targetPosition = wolfTarget.position;

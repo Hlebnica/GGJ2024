@@ -2,8 +2,12 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+
 public class Boss : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioSource audioSourceKick;
+
     public int phase = 0;
     public GameObject pushka;
     public Move nyamnyam;
@@ -22,6 +26,7 @@ public class Boss : MonoBehaviour
 
     public void chainKick()
     {
+        audioSourceKick.Play();
         if (phase == 3) win();
         if (phase == 2) phase3();
         if (phase == 1) phase2();
@@ -77,6 +82,7 @@ public class Boss : MonoBehaviour
     public void win()
     {
         if (phase != 3) return;
+        audioSource.Play();
         phase = 4;
         light.color = Color.white;
         light2.SetActive(true);

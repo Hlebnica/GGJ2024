@@ -7,9 +7,12 @@ public class Bomb : MonoBehaviour
 {
     public Transform player;
     public DeathAnim DeathAnim;
+    public AudioSource audioSource;
+
 
     IEnumerator Start()
     {
+        audioSource.Play();
         yield return new WaitForSeconds(2);
         var t = 0f;
         while (true)
@@ -22,6 +25,7 @@ public class Bomb : MonoBehaviour
         }
 
         Destroy(gameObject);
+        
 
         print(Vector3.Distance(player.position, transform.position));
         if (Vector3.Distance(player.position, transform.position) < 5)

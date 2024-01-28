@@ -24,7 +24,7 @@ public class Bomb : MonoBehaviour
         Destroy(gameObject);
 
         print(Vector3.Distance(player.position, transform.position));
-        if (Vector3.Distance(player.position, transform.position) < 2)
+        if (Vector3.Distance(player.position, transform.position) < 5)
         {
             print("AAAAA");
             DeathAnim.ebash();

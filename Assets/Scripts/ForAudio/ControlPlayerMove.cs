@@ -42,30 +42,36 @@ public class ControlPlayerMove : MonoBehaviour
         {
             if (!goslingAudio.isPlaying) 
             {
-                StartCoroutine(FadeOutAndPlay(goslingAudio, sysAudio, kibidkaAudio));
+                //StartCoroutine(FadeOutAndPlay(goslingAudio, sysAudio, kibidkaAudio));
+                goslingAudio.Play();
+                isPlayingGosling = true;
             }
         }
+        if (distance > 20.0f && goslingAudio.isPlaying) goslingAudio.Stop();
 
         distance = Vector3.Distance(bodyTransform.position, sys.transform.position);
         if (distance < 5.0f && !isPlayingSys)
         {
             if (!sysAudio.isPlaying) 
             {
-                StartCoroutine(FadeOutAndPlay(sysAudio, goslingAudio, kibidkaAudio));
-
+                //StartCoroutine(FadeOutAndPlay(sysAudio, goslingAudio, kibidkaAudio));
+                sysAudio.Play();
+                isPlayingSys = true;
             }
         }
+        if (distance > 15.0f && sysAudio.isPlaying) sysAudio.Stop();
+        
         
         distance = Vector3.Distance(bodyTransform.position, kibidka.transform.position);
         if (distance < 4.0f && !isPlayingKibidka)
         {
             if (! kibidkaAudio.isPlaying) 
             {
-                StartCoroutine(FadeOutAndPlay(kibidkaAudio, goslingAudio, sysAudio));
-
+                kibidkaAudio.Play();
+                isPlayingKibidka = true;
             }
-            
         }
+        if (distance > 15.0f && kibidkaAudio.isPlaying) kibidkaAudio.Stop();
         
     }
 

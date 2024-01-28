@@ -7,6 +7,7 @@ public class Crane : MonoBehaviour
     public GameObject magnit;
     public GameObject cross;
 
+    public static event System.Action<int> OnMusicChangeRequest;
 
     public bool isReady;
     public bool isDone;
@@ -19,6 +20,7 @@ public class Crane : MonoBehaviour
                     (Mathf.Sin(Time.time) + 1) / 2);
         if (isReady && ((Mathf.Sin(Time.time) + 1) / 2) < 0.1)
         {
+            OnMusicChangeRequest?.Invoke(2);
             isDone = true;
         }
     }

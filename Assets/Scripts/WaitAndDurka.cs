@@ -8,6 +8,6 @@ public class WaitAndDurka : MonoBehaviour
     private IEnumerator Start()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 }

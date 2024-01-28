@@ -9,6 +9,6 @@ public class Cake: MonoBehaviour
     {
         print(other.gameObject.name);
         if (boss.phase == 4 && other.gameObject.name == "Ground")
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
     }
 }

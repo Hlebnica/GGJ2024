@@ -10,6 +10,9 @@ public class Magnit : MonoBehaviour
     public GameObject sysBefore;
     public GameObject sysAfter;
 
+    public LineRenderer line;
+    public Transform anhor;
+
     public static event System.Action<int> OnMusicChangeRequest;
 
     private void OnCollisionEnter(Collision other)
@@ -29,5 +32,11 @@ public class Magnit : MonoBehaviour
             sysBefore.SetActive(false);
             sysAfter.SetActive(true);
         }
+    }
+
+    private void Update()
+    {
+        line.SetPosition(0, transform.position);
+        line.SetPosition(1, anhor.position);
     }
 }
